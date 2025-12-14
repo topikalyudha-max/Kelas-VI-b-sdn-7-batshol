@@ -1,0 +1,200 @@
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Web Kelas Saya</title>  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #1877f2;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #1877f2;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+    }
+
+    .hero {
+      background: #0f4fcf;
+      color: white;
+      padding: 30px 20px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .btn-detail {
+      float: right;
+      background: #1877f2;
+      color: white;
+      border: none;
+      padding: 6px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 12px;
+    }
+
+    .btn-detail:hover {
+      background: #145db2;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .section h2 {
+      border-bottom: 2px solid #1877f2;
+      padding-bottom: 5px;
+      color: #1877f2;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+      cursor: pointer;
+    }
+
+    li:hover {
+      background: #f0f2f5;
+    }
+
+    /* Modal */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5);
+    }
+
+    .modal-content {
+      background: white;
+      width: 300px;
+      margin: 100px auto;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .modal-content img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    .close {
+      cursor: pointer;
+      color: white;
+      background: red;
+      border-radius: 50%;
+      padding: 5px 10px;
+      font-weight: bold;
+      float: right;
+    }
+      
+    /* Floating CS WhatsApp */
+    .cs-wa {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      padding: 12px 16px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      z-index: 999;
+    }
+
+    .cs-wa:hover {
+      background: #1ebe5d;
+    }
+  </style></head>
+<body>  <header class="hero">
+    <h1>Selamat Datang di Website Kelas VI B</h1>
+    <p>Website resmi kelas VI B — data siswa, struktur kelas, dan informasi lainnya</p>
+  </header>  <div class="container"><!-- STRUKTUR KELAS -->
+<div class="section">
+  <h2>Struktur Kelas VI B</h2>
+  <ul>
+    <li>
+      wali kelas
+      <button class="btn-detail" onclick="showProfile('kamidah s,p,d')">Detail</button>
+    </li>
+    <li>
+      ketua kelas
+      <button class="btn-detail" onclick="showProfile('daffa khairil azam')">Detail</button>
+    </li>
+    <li>
+      $4
+      <button class="btn-detail" onclick="showProfile('$1', '$2', '$3')">Detail</button>
+    </li>
+    <li>
+      $4
+      <button class="btn-detail" onclick="showProfile('$1', '$2', '$3')">Detail</button>
+    </li>
+    <li>
+      $4
+      <button class="btn-detail" onclick="showProfile('$1', '$2', '$3')">Detail</button>
+    </li>
+  </ul>
+</div>
+
+<!-- DAFTAR SISWA -->
+<div class="section">
+  <h2>Daftar Siswa</h2>
+  <ul>
+    <li>Agustin Safitri <button class="btn-detail" onclick="showProfile('Siswa', 'Agustin Safitri', 'agustin.jpg')">Detail</button></li>
+    <li>Daffa Khairil Azam <button class="btn-detail" onclick="showProfile('Siswa', 'Daffa Khairil Azam', 'daffa.jpg')">Detail</button></li>
+    <li>Argensyah <button class="btn-detail" onclick="showProfile('Siswa', 'Argensyah', 'argensyah.jpg')">Detail</button></li>
+    <li>Alisa Syafira <button class="btn-detail" onclick="showProfile('Siswa', 'Alisa Syafira', 'alisa.jpg')">Detail</button></li>
+    <li>Ariq Alvaro <button class="btn-detail" onclick="showProfile('Siswa', 'Ariq Alvaro', 'ariq.jpg')">Detail</button></li>
+    <li>Akhir Kurniawan <button class="btn-detail" onclick="showProfile('Siswa', 'Akhir Kurniawan', 'akhir.jpg')">Detail</button></li>
+    <li>Topik Al Yudha <button class="btn-detail" onclick="showProfile('Siswa', 'Topik Al Yudha', 'topik.jpg')">Detail</button></li>
+    <li>Khairan Al-Faqih <button class="btn-detail" onclick="showProfile('Siswa', 'Khairan Al-Faqih', 'khairan.jpg')">Detail</button></li>
+    <li>Ahdan Rasel <button class="btn-detail" onclick="showProfile('Siswa', 'Ahdan Rasel', 'ahdan.jpg')">Detail</button></li>
+    <li>Maria Telesia <button class="btn-detail" onclick="showProfile('Siswa', 'Maria Telesia', 'maria.jpg')">Detail</button></li>
+    <li>Naima <button class="btn-detail" onclick="showProfile('Siswa', 'Naima', 'naima.jpg')">Detail</button></li>
+    <li>Dinosius Martin <button class="btn-detail" onclick="showProfile('Siswa', 'Dinosius Martin', 'dinosius.jpg')">Detail</button></li>
+    <li>Aloysius <button class="btn-detail" onclick="showProfile('Siswa', 'Aloysius', 'aloysius.jpg')">Detail</button></li>
+  </ul>
+</div>
+
+  </div>  <!-- MODAL PROFIL -->  <div class="modal" id="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">✖</span>
+      <img id="foto" src="" alt="Foto Siswa" />
+      <h3 id="nama"></h3>
+      <p id="jabatan"></p>
+    </div>
+  </div>  <script>
+    function showProfile(jabatan, nama, foto) {
+      document.getElementById('nama').innerText = nama;
+      document.getElementById('jabatan').innerText = jabatan;
+      document.getElementById('foto').src = foto;
+      document.getElementById('modal').style.display = 'block';
+    }
+
+    function closeModal() {
+      document.getElementById('modal').style.display = 'none';
+    }
+  </script>  <!-- FLOATING CS WHATSAPP -->  <a href="https://wa.me/6285365208599?text=Halo%20Admin%20Kelas%20VI%20B%2C%20saya%20ingin%20bertanya" class="cs-wa" target="_blank">
+    CS
+  </a></body>
+</html>
